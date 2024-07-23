@@ -33,7 +33,7 @@ const PaymentModal = ({ orderId, name, amount }) => {
   const payment = {
     sandbox: true,
     merchant_id: "xxxxxx",
-    merchant_secret: "MTMzNDY3NzMyNTk4MTgxNDk2NDM3NDU3NDE3ODMwODYyNDU=",
+    merchant_secret: "xxxxxx",
     return_url: "http://sample.com/return",
     cancel_url: "http://sample.com/cancel",
     notify_url: "http://sample.com/notify",
