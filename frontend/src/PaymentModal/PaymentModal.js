@@ -11,11 +11,11 @@ const PaymentModal = ({ orderId, name, amount }) => {
         const response = await axios.post(
           "http://localhost:8000/generate-hash",
           {
-            merchant_id: "1226655",
+            merchant_id: "xxxxx",
             order_id: orderId,
             amount: amount,
             currency: "LKR",
-            merchant_secret: "MTMzNDY3NzMyNTk4MTgxNDk2NDM3NDU3NDE3ODMwODYyNDU=",
+            merchant_secret: "xxxxxx",
           }
         );
 
@@ -32,7 +32,7 @@ const PaymentModal = ({ orderId, name, amount }) => {
 
   const payment = {
     sandbox: true,
-    merchant_id: "1226655",
+    merchant_id: "xxxxxx",
     merchant_secret: "MTMzNDY3NzMyNTk4MTgxNDk2NDM3NDU3NDE3ODMwODYyNDU=",
     return_url: "http://sample.com/return",
     cancel_url: "http://sample.com/cancel",
